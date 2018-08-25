@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>What can JavaScript do?</title>
+</head>
+<body>
+ <h1>What can JavaScript do?</h1>
+ <p ID="demo">Javascript can update HTML content!</p>
+  <button onclick="document.getElementById('demo').innerText='HTML Updated!'">Click to Submit!</button>
+  <hr>
+  <button onclick="document.getElementById('LightOFF').src='LightOn.PNG'">Light On</button>
+  <img ID="LightOFF" src="LightOFF.PNG"/>
+  <button onclick="document.getElementById('LightOFF').src='LightOFF.PNG'">Light Off</button>
+ <hr>
+  <p Id="magic">"This is something magical!"</p>
+  <button onclick="document.getElementById('magic').style.display='none'">Hide the content</button>
+
+  <button onclick="document.getElementById('magic').style.display='block'">Show the content</button>
+</body>
+</html>
