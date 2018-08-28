@@ -6,9 +6,9 @@ Tools
    - index.html
 ---------------
  Section -1 ; Lecture 4 : an  example : What Js can do ? 
- When we embed it to Web page to add dynamic content to it.
+When we embed it to Web page to add dynamic content to it.
 --------------
-Notes for WhereToPutJs.html (Section1 Lecture 5)
+  (Section1 Lecture 5) :Notes for WhereToPutJs.html
 
 1. In head section
 2. In body section
