@@ -6,17 +6,21 @@
     <title>What can JavaScript do?</title>
 </head>
 <body>
+// A program to understand what can Js do ? Ex explained in Section -1 Lecture4
  <h1>What can JavaScript do?</h1>
  <p ID="demo">Javascript can update HTML content!</p>
   <button onclick="document.getElementById('demo').innerText='HTML Updated!'">Click to Submit!</button>
   <hr>
-  <button onclick="document.getElementById('LightOFF').src='LightOn.PNG'">Light On</button>
-  <img ID="LightOFF" src="LightOFF.PNG"/>
-  <button onclick="document.getElementById('LightOFF').src='LightOFF.PNG'">Light Off</button>
+  <button onclick="document.getElementById('LightOFF').src='https://i.imgur.com/2IRs7Bs.gif'">Light On</button>
+  <img ID="LightOFF" src="https://i.imgur.com/8kGmXwB.png"/>
+  <button onclick="document.getElementById('LightOFF').src='https://i.imgur.com/8kGmXwB.png'">Light Off</button>
  <hr>
   <p Id="magic">"This is something magical!"</p>
   <button onclick="document.getElementById('magic').style.display='none'">Hide the content</button>
-
   <button onclick="document.getElementById('magic').style.display='block'">Show the content</button>
+<hr>
+  <p Id="Emoticon">:-|</p>
+  <button onclick="document.getElementById('Emoticon').innerText=':)'">Happy Emoticon</button>
+  <button onclick="document.getElementById('Emoticon').innerText=':('">Sad Emoticon</button>
 </body>
 </html>
