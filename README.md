@@ -44,3 +44,15 @@ in the calling html
 
 note - avoid scripting while loading the page i.e in the head tag!
 (consideration while performance is criteria)
+***********************
+Section-2 Lecture 1 : Notes for How to See Output from JS
+
+Four Ways :
+1. window.alert() - Throws alert on the window for the user.
+2. document.write() - Used to write/update data on screen
+3. innerHTML - Used to update the text in HTML
+4. console.log() - Important for development purpose ; Works silently without hindering user experience
+
+Important point :
+- using document.write after page loads will replace the content of the page(Must be avoided).
+- to see the output for console.log - on browser > rt. click and click on inspect > console 
