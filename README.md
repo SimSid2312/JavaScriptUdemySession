@@ -52,10 +52,10 @@ note - avoid scripting while loading the page i.e in the head tag!
 Section-2 Lecture 1 : Notes for How to See Output from JS
 
 Four Ways :
-1. window.alert() - Throws alert on the window for the user.
-2. document.write() - Used to write/update data on screen
-3. innerHTML - Used to update the text in HTML
-4. console.log() - Important for development purpose ; Works silently without hindering user experience
+1. window.alert() - Throws alert on the window for the user.A Method;accept input parameters
+2. document.write() - Used to write/update data on screen.A Method;accept input paramters
+3. innerHTML - Used to update the text in HTML.Just do assignment for this.
+4. console.log() - Important for development purpose ; Works silently without hindering user experience.A Method;accept input parameters.
 
 Important point :
 - using document.write after page loads will replace the content of the page(Must be avoided).
