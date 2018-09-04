@@ -7,6 +7,9 @@ Tools
 ***********************
 Section -1 ; Lecture 4 : an  example : What Js can do ? 
 When we embed it to Web page to add dynamic content to it.
+-> JS can change the content of HTML
+-> JS can change the attributes of HTML tag
+-> JS can show/hide content of HTML
 ***********************
   (Section1 Lecture 5) :Notes for WhereToPutJs.html
 
