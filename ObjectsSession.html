@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h1>Objects</h1>
+  <p1 id="demo">We will learn about Objects.</p1>
+  <script>
+      // An object can hold members varibles and methods.
+      var car={
+          type:"BMW",
+          color:"Blue",
+          model:"2017",
+          changeModel:function changeCarModel(newModel){
+                this.model=newModel;
+          }
+              };
+      console.log("Initial Model: "+ car.model);
+      car.changeModel(2018);
+      console.log("Updated Model: "+ car.model);
+  </script>
+</body>
+</html>
