@@ -2,7 +2,33 @@
 <html lang="en">
 <body>
   <h1>Scope</h1>
-  <p1 id="demo">We will cover topic: JavaScript Scope.</p1>
+  <p id="demo">We will cover topic: JavaScript Scope</p>
+  <p id="globalScope"></p>
+ <script> // Global/Local Variables in JS
+     var oldname;
+     var name="George"; // global variable - accessible everywhere in this Script
+     function GreetingHello(){
+         var name="Peppa Pig"; // local variable - accessible within this function
+         console.log("Hello "+name);
+     }
+     GreetingHello();
+     function GrettingBye(){
+         var name ="Suzy Sheep";
+         console.log("Bye Bye :"+name);
+     }
+     GrettingBye();
+     console.log("Do you want to build a castle, "+name+"?");
+     function renameGlobalVariable(newName){
+         this.oldname=name;
+         this.name=newName; // changing the global variable value
+     }
+     renameGlobalVariable("Sarbani");
+     console.log("Updated Successfully from "+ oldname+" to "+name);
+     console.log("Castle Built by :"+ name);
+     // Sending the global variable value out to the HTML tag
+     document.getElementById("globalScope").innerHTML="Work done by:" + window.name;
 
+
+ </script>
 </body>
 </html>
