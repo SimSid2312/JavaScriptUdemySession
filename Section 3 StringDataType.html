@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>DataTypes</h1>
+<p id="StringDemo">Strings lect1,See the console</p>
+<script>
+    var text1="It\'s alright, Simran";
+    console.log("text1: "+text1);
+    console.log("Lenght of text1: "+ text1.length);
+    //Difference btw Primitive string and Object of class String
+    var text2="Simran Sidhu";
+    var text3=new String("Simran Sidhu");
+    console.log("text2: "+text2);
+    console.log("text3: "+text3);
+    console.log("text2==text3 "+ (text2==text3));
+    console.log("text2===text3 "+ (text2===text3));
+    // No two String Object will be equal
+    var text4=new String("Simran Sidhu");
+    console.log("text3==text4 "+ (text3==text4));
+    console.log("text3===text4 "+ (text3===text4));
+</script>
+<hr>
+<p id="StringDemoPart1">String lect2 Part1 and Part2 , String Methods</p>
+<script>
+    var text = "Find me if you can, me can also be here";
+    console.log("String methods:");
+    console.log("text length: "+text.length);
+
+    //Finding the Position of a word.
+    console.log("text: "+text);
+    console.log("indexOf(): "+ text.indexOf('me'));//First occurence Only
+    console.log("lastIndexOf(): "+ text.lastIndexOf('me')); //lastindex of the occurence
+    console.log("search(): "+ text.search('me'));
+
+    //slice, substring,substr,split
+    var fruits = "Apple, Banana, Kiwi";
+    console.log("slice: "+fruits.slice(7,13));
+    console.log(" negative param allowed with slice: "+fruits.slice(-12,-6));
+    console.log("substring: "+fruits.substring(7,13));
+    console.log("substr accepts length as the second parameter hence that can also not be -ve: "+fruits.substr(7,6));
+    console.log("split (),fruits: "+typeof(fruits) +" content: "+fruits);
+    var fruitArray=fruits.split(",");
+    console.log("split (),fruitsArray: "+typeof(fruitArray)+" content: "+fruitArray +" first ele:"+fruitArray[0]);
+    document.getElementById("StringDemoPart1").innerText=fruitArray;
+    //Other criteria to split :
+    //console.log(fruitsArray);
+    //console.log(fruits.split(' '));
+    //console.log(fruits.split('a'));
+    //console.log(fruits.split(''));
+
+
+
+    //Replace the content - replace () using strings and regular expression
+    //Strings are immutable - any update creates a new string
+    //To replace all occurance of a word and not just the first - USE regular exp.
+    var fruitsUpgrade=fruits.replace("Kiwi","Oranges");
+    console.log("fruits: "+fruits);
+    console.log("fruitsUpgrade: "+fruitsUpgrade);
+    console.log("regular exp usage: "+text.replace(/me/g,"peppa"));
+
+    //toUpperCase , toLowerCare
+    var t="Hello World";
+    console.log(t+t.toLowerCase()+t.toUpperCase());
+
+    //String concat
+    var h="Hello";
+    var w="World!";
+    var z=h.concat(" ",w);
+    var z1=h+" "+w;
+    console.log("concat ():"+z);
+    console.log("+ op: "+z1);
+
+    //Extracting String Characters
+    //charAt() ,charCodeAt() - return Unicode
+    console.log("charAt(): "+ h.charAt(1));
+    console.log("charCodeAt(): "+h.charCodeAt(1));
+
+</script>
+
+</body>
+</html>

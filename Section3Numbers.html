@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Numbers</h1>
+<script>
+   // Concept of Infinity in JS
+    var x = 2/0;
+    console.log("+ve Infinity: "+x,typeof(x));
+
+    var x1 = -2/0;
+    console.log("-ve Infinity: "+x1 ,typeof(x1));
+    // Concept of Nan - Not a number
+
+    var x2=100/"Hundered";
+   console.log("x2: "+x2,typeof (x2));
+
+   var x3=100/"100";
+   console.log("x3: "+x3,typeof (x3));
+
+   console.log("Type of NAN :"+typeof (NaN));
+
+   var x8 = NaN;
+   var x9 = "5";
+   var x10 = x8 + x9;
+   console.log(x10,typeof(x10) );//output :NaN5 string
+
+// Number can be object too!!
+   //Numbers can be Objects
+   var x11 = new Number(10);
+   var x12 = 10;
+   console.log("x11: "+x11,typeof (x11));
+   console.log("x12: "+x11,typeof (x12));
+   //----------------------- NUMBER METHODS----------------------------------
+    //Convert String -> number : .toString()
+    var age=122;
+    var age_updated=age.toString();
+    console.log(age_updated,typeof (age_updated));
+    //Converting variables to Numbers
+   var age_num_updated=Number(age_updated);
+    console.log(age_num_updated,typeof (age_num_updated));
+     var test_parseInt=parseInt(1.2+age_updated); //similarly parseFloat
+     console.log(test_parseInt +" "+typeof (test_parseInt));
+
+     //Properties of Number
+    console.log("Number.MAX_VALUE: "+ Number.MAX_VALUE);
+    console.log("Number.MIN_VALUE: "+Number.MIN_VALUE);
+    console.log("Number.NegativeInfinity: "+Number.NEGATIVE_INFINITY);
+    console.log("Numbed.PositiveInfinity: "+Number.POSITIVE_INFINITY);
+
+</script>
+</body>
+</html>
