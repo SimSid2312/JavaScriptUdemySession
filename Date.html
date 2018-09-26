@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h1>Dates</h1>
+  <p id="demo">Display result here</p>
+  <script>
+      var today,someday;
+      today=new Date();
+      someday=new Date();
+      someday.setFullYear(2020,11,23);
+      if (today > someday){
+          console.log("Today is greater :"+today);
+          document.getElementById("demo").innerText=today;
+      }
+      else
+      {
+          console.log("someday is greater: "+someday);
+          document.getElementById("demo").innerText=someday;
+      }
+
+  </script>
+
+</body>
+</html>
