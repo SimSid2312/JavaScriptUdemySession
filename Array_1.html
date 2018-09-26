@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<h1>Arrays</h1>
+<script>
+
+    var cars=["BMW", //0
+        "Audi",//1
+        "Acura"];//2
+    console.log(cars);
+    console.log(cars[0]);
+    //adding an element - use push?()
+    cars.push("Volvo");
+    console.log(cars);
+    console.log("an index with no value / out of array range , output:Undefined= "+cars[4]);
+
+    //new Array()
+    var cars1= new Array("chevi","Ram","Nissan");
+    console.log(cars1);
+
+
+    // SORTING METHOD:
+    console.log(cars.length);
+    console.log("Unsorted: "+cars);
+    console.log("Sorted: "+cars.sort());
+    for(i=0;i<cars.length;i++){
+        console.log(cars[i]+"Z");
+    }
+
+    //Array Methods
+
+    var fruits=["Banana","Mango","Apple","Grape","PineApple"];
+    console.clear();
+    console.log(fruits);
+    var fruitsString=fruits.toString();
+    console.log(fruitsString);
+    console.log(typeof (fruitsString));
+
+    console.log("Join: "+fruits.join("|"));
+
+    fruits.push("Kiwi");
+    console.log("push ele to last :"+ fruits);
+
+    fruits.pop();// pop out the last ele
+    console.log("pop: "+fruits);
+
+    fruits.shift();
+    console.log("Shift : "+fruits); // 1. remove first ele and move pos of other ele to one index lower
+
+    fruits.unshift("Banana");//2. add to the first index and move pos of other ele to one index up
+    console.log("Unshift: "+fruits)
+
+    fruits.unshift("Appricots");
+    console.log("Unshift: "+fruits)
+
+    //changing ele val:
+    fruits[0]="BlueBerry";
+    console.log("change ele val:"+fruits);
+    //add an ele to end:
+    fruits[fruits.length]="Plum";
+    console.log(fruits.toString());
+
+    //splice
+    var fruits=["Banana","Mango","Apple","Grape","PineApple"];
+    console.log(fruits.toString());
+    fruits.splice(2,1,"Lemon","Melon");
+    console.log("splice ():"+fruits);
+    fruits.splice(2,1);
+    console.log("splice up():"+fruits);
+
+    // Joining the arrays....
+    var array1=["tom","john"];
+    var array2=["smith","jess","gabriel"];
+    var array3=["bob","peppa"];
+    var myArray=array1.concat(array2,array3);
+    console.log(myArray);
+
+    //Sorting of Arrays
+    console.clear();
+    var fruitsBought=["Banana","Apple","Orange","Mango"];
+    console.log(fruitsBought.toString());
+    fruitsBought.sort();
+    console.log(".sort(): "+fruitsBought.toString());
+    fruitsBought.reverse();
+    console.log(".reverse(): "+fruitsBought.toString());
+
+    var points=[8,3,4,2,1];
+    //console.log("sort: "+points.sort());// Output- 100,15,25,34,40,90
+    // To rectify - send a input to sort () a comparator function.
+    console.log("Comparator Sorting: "+points.sort(function comp(a,b){
+            console.log("a: "+a);
+            console.log("b: "+b);
+            console.log("-------")
+
+
+    })
+    );
+</script>
+</body>
+</html>
