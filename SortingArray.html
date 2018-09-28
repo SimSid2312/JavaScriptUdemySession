@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+  <h1>Sorting Array</h1>
+  <p1 id ="demo"> In this lecture we study about Sorting Array</p1>
+
+  <script>
+      var fruits = ["Orange","Apple","Mango","Grapes"];
+      console.log(fruits);
+      fruits.sort();
+      console.log("sorted... "+fruits );
+      console.log("desc sorted : "+ fruits.reverse());
+
+      var num=[40,100,1,5,25,10,15];
+      console.log("sorted : "+num.sort(
+          function f( a, b){
+              return a-b;
+          }));
+
+      var num1=[1,11,123,1256,2];
+      console.log("The given array was :"+ num1);
+      num1.sort(function (a,b) { //compare function - define an alternate sort order
+          return a - b; //1-11=-10 -ve so a be on left of b . If +ve number then a go to the right of b
+      });
+      console.log("The sorted array is : "+num1);
+      num1.sort(function (a,b){
+          return b -a;
+      });
+      console.log("The reversed array is :"+num1);
+
+      //making use of random
+      num1.sort(function (a,b){
+          var myNum= Math.random();
+          document.getElementById("demo").innerText+=" "+myNum;
+          var res = 0.5- myNum;
+          console.log("Returning : "+res);
+          return res;
+      });
+      console.log("Random Method: "+ num1);
+
+      // sorting the num1 again...
+      num1.sort(function (a,b){
+          return a-b;
+      })
+      console.log("Lowest ele: "+ num1[0]);
+      console.log("Highest ele: "+num1[num1.length-1]);
+
+      //Array of Objects ---
+
+      var cars = [
+          {name: 'Volvo', year: 2015},
+          {name: 'Merc', year: 2011},
+          {name: 'BMW', year: 2013},
+      ];
+
+      //Sorting based of numberic object param
+      console.log(cars);
+      console.clear();
+      cars.sort(function(a, b){return a.year - b.year});
+      console.log(cars);
+
+        console.clear();
+      //Sorting based of string object param
+      cars.sort(function(a,b){
+          var x = a.name.toLowerCase();
+          var y = b.name.toLowerCase();
+          if(x < y) {return -1};
+          if (x > y) {return 1};
+          return 0;
+      });
+      console.log(cars);
+  </script>
+</body>
+</html>
