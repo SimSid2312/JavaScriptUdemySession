@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<h1>Objects and this keyword</h1>
+<body>
+<p1>In this lecture we study about Objects and it's properties</p1>
+<script>
+    // Objects in JS
+    var x1= new Boolean();//Booleans
+    var x2= new Number(); //Numbers
+    var x3= new String();//Strings
+    var x4= new Number();//Dates
+    //Maths - math is a global object - new keyword cannot be used on math
+    var x5= new RegExp();//Regular Expressions
+    var x6= new Array();//Arrays
+    var x7= new Function();//Functions
+    var x8= new Object();//Objects
+
+    var personS ="John Doe"; // a string
+    var person= {firstName:"John", // a name and value pair - an object property
+    lastName:"Doe",
+    age:30,
+    eyeColor:"blue",
+    fullName:function(){ // object method - is an objects' property containing function as value.
+        return this.firstName+" "+this.lastName;
+    }};
+
+
+    // Three ways of creating object --->
+    //A) using object literal--
+    var personSmarter= {firstName:"John",
+        lastName:"Doe",
+        age:30,
+        eyeColor:"blue",
+        };
+
+
+
+    //B) use new keyword --
+    var personSmarterVersion2=new Object();
+    personSmarterVersion2.firstName="John";
+    personSmarterVersion2.lastName="Doe";
+
+    //C) use constructor
+    function myPerson(firstName,lastName,age,eyeColor){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.age=age;
+        this.eyeColor=eyeColor;
+
+        function addDaughter(fname,lname){
+             return fname+" "+lname;
+        }
+    }
+
+    var mother=new myPerson("Balbir","Sidhu",55,"black");
+    var father=new myPerson("Ranjit","Sidhu",60,"black");
+    console.log("CREATED OBJECT USING CONSTRUCTOR (BUILT A FUNCTION AND USED NEW KEYWORD AND PASSED IN INPUT)"+ mother.firstName);
+    console.log("Father's first_name: "+father["firstName"]);
+
+    // HOW TO ACCESS THE OBJECT PROPERTIES - 3 WAYS -->
+    console.log("Ways to access Object Properties");
+    console.log("1.objectName.propertyName :"+personSmarter.firstName); //OBJECT_NAME.PROPERTY
+    console.log("2. ObjectName['properties'] :" +personSmarter["lastName"]);//OBJECT_NAME['PROPERTY'];
+    var x="eyeColor";
+    console.log("3. ObjectName[expression] :"+personSmarter[x]);//OBJECT_NAME['EXPRESSION'];
+    console.log("age: "+ personSmarter['age']);
+    console.log("THE FOR LOOP -- LOOPING OVER THE PROPERTIES OF THE OBJECT");
+
+     var prop="";
+    for (personProp in father){
+        prop+=" "+father[personProp];
+        console.log("Property: "+personProp+"; "+" Value: "+father[personProp]);
+
+    };
+    console.log("The father's details :"+ prop);
+
+    // How to delete object properties and add an object Property
+
+    mother.daughterName="Simran";
+    console.log("Mother's dauughter: "+mother.daughterName);
+    console.log("Deleting the new added property using delete keyword -- which works with object property ONLY!");
+    delete mother.daughterName;
+    console.log("Mother's dauughter: "+mother.daughterName);
+
+
+
+
+</script>
+
+</body>
+</html>

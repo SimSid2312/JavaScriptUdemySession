@@ -14,27 +14,32 @@
     <session id="-1123988143">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.102" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.66" value="2" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.68" value="1" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.81" value="1" />
           <entry key="project.open.time.98" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="PNG" value="1" />
-          <entry key="html" value="43" />
+          <entry key="html" value="45" />
           <entry key="js" value="8" />
           <entry key="md" value="2" />
           <entry key="ts" value="1" />
@@ -42,7 +47,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="43" />
+          <entry key="HTML" value="45" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="2" />
@@ -51,15 +56,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="14981" />
+          <entry key="html" value="18075" />
           <entry key="js" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="14837" />
+          <entry key="HTML" value="17929" />
           <entry key="JavaScript" value="45" />
-          <entry key="Scala" value="144" />
+          <entry key="Scala" value="146" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -71,10 +76,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Booleans.html">
+        <entry file="file://$PROJECT_DIR$/Objects/Objects_and_this.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="391">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -137,6 +142,7 @@
         <option value="$PROJECT_DIR$/Array_1.html" />
         <option value="$PROJECT_DIR$/SortingArray.html" />
         <option value="$PROJECT_DIR$/Booleans.html" />
+        <option value="$PROJECT_DIR$/Objects/Objects_and_this.html" />
       </list>
     </option>
   </component>
@@ -157,9 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,17 +170,25 @@
               <item name="JavaScriptUdemySession" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaScriptUdemySession" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaScriptUdemySession" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaScriptUdemySession" type="462c0819:PsiDirectoryNode" />
+              <item name="Objects" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538111364313" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539113858335" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -257,11 +268,16 @@
       <workItem from="1537419864079" duration="1730000" />
       <workItem from="1538002581195" duration="1071000" />
       <workItem from="1538106403166" duration="4771000" />
+      <workItem from="1538112506296" duration="2533000" />
+      <workItem from="1538161472048" duration="1189000" />
+      <workItem from="1539049267618" duration="2194000" />
+      <workItem from="1539060965815" duration="1669000" />
+      <workItem from="1539111248986" duration="2568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51147000" />
+    <option name="totallyTimeSpent" value="61300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -276,7 +292,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23298033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16263238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -589,6 +605,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Objects/Objects_and_this.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
