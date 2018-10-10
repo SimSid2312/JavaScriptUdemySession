@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+ <h1>Object Prototype</h1>
+  <p1 id="demo">Lecture on Object Prototype</p1>
+  <script>
+
+   // Object Prototyping ..
+   //1 . create a function
+   function People(first,last,age,eye){
+       this.firstName=first;
+       this.lastName=last;
+       this.age=age;
+       this.eyeColor=eye;
+       this.allProp=function (){
+           return this.firstName+" "+this.lastName+" "+this.age+" "+this.eyeColor;
+       };
+       //this.nationality="Canadian";
+       this.language = function (lang) {
+           return lang;
+       };
+   };
+   //2. create an Object using new keyword
+   People.prototype.nationality="Perm-Res,Canadian";
+   People.prototype.fullName=function(){
+       return this.firstName+" "+this.lastName;
+   }
+   var mom=new People("Balbir","Sidhu",55,"brown");
+   console.log(mom.allProp());
+   var daddy= new People("Ranjit","Sidhu",60,"brown");
+   console.log(daddy.allProp());
+
+   //adding a property with a function/string as a value to an Object and not the prototype
+  // mom.nationality="Canadian";
+
+   mom.speaks=function(){
+       return "English";
+   }
+   console.log(mom.firstName+" is a "+mom.nationality+" and speak language: "+mom.language());
+   console.log(daddy.firstName+" is a "+daddy.nationality+" and speak language: "+daddy.language("Persian"));
+
+   // Trying to add a property to the Object prototype --->
+
+   console.log(daddy.firstName+" is a "+daddy.nationality); // still remain daddy.nationality = undefined
+   // Approach 1: So, to add property to an prototype -- you have to define in the prototype definition
+   // Approach2 :  use object prototype keyword -- see line 24 and 25 above
+  console.log("Mom: "+mom.fullName());
+  console.log("Dad : "+daddy.fullName());
+
+  </script>
+</body>
+</html>
